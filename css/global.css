@@ -1,0 +1,68 @@
+@import "./normalize.css";
+@import "./fonts.css";
+@import "./buttons.css";
+@import "./header.css";
+@import "./footer.css";
+@import "./variables.css";
+
+/* GLOBAL */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  transition: all 0.3s linear;
+}
+html {
+  height: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6.5rem;
+}
+a {
+  display: inline-block;
+}
+img {
+  max-width: 100%;
+  display: flex;
+}
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.625;
+  color: var(--dark-gray-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1211px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+/* MAIN */
+.main {
+  flex-grow: 1;
+}
+@media (max-width: 992px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
